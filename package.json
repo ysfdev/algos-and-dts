@@ -1,0 +1,32 @@
+{
+  "name": "algos-and-dts",
+  "version": "1.0.0",
+  "description": "A list of data structures and algorithms implementations in JS. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -c config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysfdev/algos-and-dts.git"
+  },
+  "keywords": [
+    "algorithms",
+    "in",
+    "JS",
+    "algorithms",
+    "data",
+    "structures",
+    "in",
+    "JS"
+  ],
+  "author": "YSFDEV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ysfdev/algos-and-dts/issues"
+  },
+  "homepage": "https://github.com/ysfdev/algos-and-dts#readme",
+  "devDependencies": {
+    "jest": "^20.0.0"
+  }
+}
