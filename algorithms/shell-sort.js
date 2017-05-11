@@ -3,7 +3,7 @@
  * Efficiency: O(N*Log N)
  */
 
-class ShellShort {
+class ShellSort {
     constructor(arr) {
         this.array = arr;
         //this.shellSort(arr);
@@ -40,8 +40,4 @@ class ShellShort {
     }
 }
 
-const array = [9,8,5,4,6,2,7,1,10,3];
-const sortArray = new ShellShort(array);
-console.log('Arr before sorting', array);
-sortArray.shellSort();
-console.log('Arr after sorting', sortArray.getSortedArray());
+module.exports.ShellSort = ShellSort;
