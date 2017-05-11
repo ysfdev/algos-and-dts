@@ -61,11 +61,25 @@ class Tree {
 
     traverse(orderType = "inOrder") {
         switch (orderType) {
+            case "preOrder":
+                this.traversePreOrder(this.root);
+                break;
             case "inOrder":
                 this.traverseInOrder(this.root);
                 break;
+            case "postOrder":
+                this.traversePostOrder(this.root);
+                break;
             default:
                 console.log('Invalid traversing order Type');
+        }
+    }
+
+     traversePreOrder(localRoot) {
+        if (localRoot !== null) {
+            localRoot.displayNode();
+            this.traverseInOrder(localRoot.leftChild);
+            this.traverseInOrder(localRoot.rightChild);
         }
     }
 
@@ -74,6 +88,14 @@ class Tree {
             this.traverseInOrder(localRoot.leftChild);
             localRoot.displayNode();
             this.traverseInOrder(localRoot.rightChild);
+        }
+    }
+
+     traversePostOrder(localRoot) {
+        if (localRoot !== null) {
+            this.traverseInOrder(localRoot.leftChild);
+            this.traverseInOrder(localRoot.rightChild);
+            localRoot.displayNode();
         }
     }
 }
