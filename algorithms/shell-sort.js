@@ -18,7 +18,7 @@ class ShellSort {
             h = (h * 3) + 1;
         
         while (h > 0) {
-            console.log('h =', h);
+            //console.log('h =', h);
             for (outer = h; outer < this.array.length; outer++) {
                 let temp = this.array[outer];
                 inner = outer;
