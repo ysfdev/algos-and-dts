@@ -1,6 +1,6 @@
 /**
  * Implementation of a Stack
- * Stack perform operation as FIFO
+ * Stack perform operation as LIFO
  */
 
 class Stack {
@@ -9,7 +9,7 @@ class Stack {
     }
 
     addElement(e) {
-        this.stack.push(e);
+        this.stack.unshift(e);
     }
 
     getElement() {

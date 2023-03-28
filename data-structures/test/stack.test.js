@@ -5,8 +5,8 @@ describe('Stack Tests', () => {
     Stack.addElement(4);
     Stack.addElement(5);
 
-    test('Should return the first element from stack', () => {
-        expect(Stack.getElement()).toBe(4);
+    test('Should return the last element added to stack', () => {
+        expect(Stack.getElement()).toBe(5);
     })
 
     test('Expect stack to not be Empty', () => {

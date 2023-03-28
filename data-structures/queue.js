@@ -1,11 +1,12 @@
 /**
  * Implementation of a Queue
- * Queue performs operations as LIFO
+ * Queue performs operations as FIFO
  */
 
 class Queue {
     constructor() {
         this.queue = [];
+        this.idx = -1;
     }
 
     enqueue(e) {
@@ -13,7 +14,7 @@ class Queue {
     }
 
     dequeue() {
-        return this.queue.pop();
+        return this.queue.shift();
     }
 
     isEmpty() {

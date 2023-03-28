@@ -1,7 +1,7 @@
 /**
  * Convert a string to title case
- * @param {String} title 
- * @param {String} minorWords 
+ * @param {String} title
+ * @param {String} minorWords
  */
 
 module.exports.titleCase = (title, minorWords) => {
@@ -15,22 +15,22 @@ module.exports.titleCase = (title, minorWords) => {
     minorWordsArr.forEach((minorWord) => {
       if (word.toLowerCase() === minorWord.toLowerCase() && fIndex !== 0) {
         excluded = true;
-       } 
-    })
-    
+      }
+    });
+
     if (!excluded) {
-         word.split('').forEach((char, index) => {
-          if (index === 0) {
-            parsedWord += char.toUpperCase();
-          } else {
-            parsedWord += char.toLowerCase();
-          }
-        })
+      word.split("").forEach((char, index) => {
+        if (index === 0) {
+          parsedWord += char.toUpperCase();
+        } else {
+          parsedWord += char.toLowerCase();
+        }
+      });
     } else {
-        parsedWord += word.toLowerCase();
+      parsedWord += word.toLowerCase();
     }
     parsedTitles.push(parsedWord);
-  }) 
-  
+  });
+
   return parsedTitles.join(" ");
-}
+};
